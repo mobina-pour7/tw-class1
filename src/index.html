@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/output.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <body class="bg-linear-60  to-pink-100 from-indigo-50 from-20%">
+    <header class="bg-purple-100 shadow-md py-4 px-6">
+        <div class="container mx-auto flex items-center justify-between">
+            <!-- عنوان در سمت چپ -->
+            <h1 class="text-lg md:text-xl font-bold text-gray-800">Tailwind✨</h1>
+            
+            <!-- لوگوی دایره‌ای در وسط -->
+            <div class="mx-2 md:mx-4">
+                <img src="/assests/images/plus-tailwind.jpg" alt="لوگو" 
+                     class="rounded-full w-10 h-10 md:w-14 md:h-14 border-2 border-gray-300 object-cover">
+            </div>
+            
+            <!-- کلید متحرک و پنل کشویی -->
+            <div class="relative">
+                <!-- دکمه toggle -->
+                <button id="toggleButton" 
+                        class="peer w-12 md:w-14 h-6 md:h-8 flex items-center bg-gray-300 rounded-full p-1 transition-all duration-300 focus:outline-none">
+                    <div class="bg-white w-4 md:w-6 h-4 md:h-6 rounded-full shadow-md transform transition-transform duration-300 peer-checked:translate-x-6"></div>
+                </button>
+                
+                <!-- پنل کشویی -->
+                <div class="absolute right-0 top-full mt-2 w-[20cm] bg-white rounded-lg shadow-xl p-4 
+                           scale-95 opacity-0 invisible transition-all duration-300 
+                           peer-checked:scale-100 peer-checked:opacity-100 peer-checked:visible">
+                    <p class="text-gray-700">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Impedit dolores voluptate suscipit. <br> Accusamus suscipit tenetur molestias <br> labore velit alias, <br> exercitationem ut, ad nulla, quis illo <br> mollitia modi? Illo, dolores nemo.</p>
+                    <button class="mt-2 px-4 py-2 bg-blue-500 text-black rounded hover:bg-blue-600">دکمه نمونه</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="border p-4 max-w-screen-lg mx-auto mt-8">
+      <!-- بخش بالایی -->
+      <div class="flex flex-col md:flex-row gap-2 mb-4">
+        <!-- تصویر سمت چپ -->
+        <img src="/assests/images/images.jpg" alt="عکس" class="w-full md:w-1/3 object-cover border rounded" />
+    
+        <!-- کادر کنار عکس -->
+        <div class="border rounded p-2 flex-1">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nisi amet porro iure itaque animi doloremque dignissimos fugit nulla perferendis sequi, distinctio harum explicabo voluptates eum cum, excepturi ipsam delectus!</p>
+        </div>
+      </div>
+    
+      <!-- بخش پایینی -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+        <!-- کادر ستونی زیر عکس -->
+        <div class="border p-2 flex flex-col items-start">
+          <p class="mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias a tempora eaque laudantium tenetur. Cumque mollitia maiores repellendus blanditiis, aliquam doloremque expedita optio molestias corporis asperiores, omnis non deleniti iste.</p>
+        </div>
+    
+        <!-- کادر با عکس، نوشته و دکمه -->
+        <div class="border p-2 flex flex-col items-center">
+          <img src="/assests/images/france-in-pictures-beautiful-places-to-photograph-mont-st-michel.jpg" alt="عکس دوم" class="w-full h-32 object-cover rounded mb-2" />
+          <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cumque culpa esse et, eum fugiat est illo sed dicta facilis officia veniam asperiores provident mollitia repellat ab aspernatur accusamus quaerat.</p>
+          <button class="bg-purple-200 text-black px-4 py-1 rounded hover:bg-blue-300">Button</button>
+        </div>
+        <!-- نوشته 1 داخل کادر دیگر -->
+        <div class="border p-2 flex flex-col items-start">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel iste, incidunt molestias illum eligendi pariatur necessitatibus, tempore ea doloremque dolorum aspernatur non. Cumque similique, praesentium repellendus explicabo vitae iste exercitationem?</p>
+        </div>
+        <!-- نوشته 2 داخل کادر دیگر -->
+        <div class="border p-2 flex flex-col items-start">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel iste, incidunt molestias illum eligendi pariatur necessitatibus, tempore ea doloremque dolorum aspernatur non. Cumque similique, praesentium repellendus explicabo vitae iste exercitationem?</p>
+        </div>
+        <!-- نوشته3 داخل کادر دیگر -->
+        <div class="border p-2 flex flex-col items-start">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel iste, incidunt molestias illum eligendi pariatur necessitatibus, tempore ea doloremque dolorum aspernatur non. Cumque similique, praesentium repellendus explicabo vitae iste exercitationem?</p>
+        </div>
+        <!-- نوشته4 داخل کادر دیگر -->
+        <div class="border p-2 flex flex-col items-start">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel iste, incidunt molestias illum eligendi pariatur necessitatibus, tempore ea doloremque dolorum aspernatur non. Cumque similique, praesentium repellendus explicabo vitae iste exercitationem?</p>
+        </div>
+        </div>
+      </div>
+    </main>
+    
+<main class=" bg-purple-50 relative border p-4 max-w-screen-lg mx-auto mt-8 overflow-hidden">
+  <!-- لیست عکس‌ها که اسکرول می‌شن -->
+  <div class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth gap-2">
+    <!-- عکس 1 -->
+    <div class="min-w-[200px] flex-shrink-0 snap-start">
+      <img src="/assests/images/12-Beautiful-Places-for-Winter-Landscapes-in-the-World-Banff-National-Park-Canada_©-Christian-Petrone_Shutterstock_1925535119.jpg" alt="عکس 1" class="rounded border w-full h-40 object-cover" />
+    </div>
+    <!-- عکس 2 -->
+    <div class="min-w-[200px] flex-shrink-0 snap-start">
+      <img src="/assests/images/part-blurry-image.webp" alt="عکس 2" class="rounded border w-full h-40 object-cover" />
+    </div>
+    <!-- عکس 3 -->
+    <div class="min-w-[200px] flex-shrink-0 snap-start">
+      <img src="/assests/images/Kirkjufell.webp" alt="عکس 2" class="rounded border w-full h-40 object-cover" />
+    </div>
+    <!-- عکس 4 -->
+    <div class="min-w-[200px] flex-shrink-0 snap-start">
+      <img src="/assests/images/giethrorn-netherlands-unknown-places-in-europe.jpeg" alt="عکس 2" class="rounded border w-full h-40 object-cover" />
+    </div>
+    <!-- عکس 5 -->
+    <div class="min-w-[200px] flex-shrink-0 snap-start">
+      <img src="/assests/images/most-beautiful-places-in-australia-the-great-ocean-roads-12-apostles-hero.avif" alt="عکس 3" class="rounded border w-full h-40 object-cover" />
+    </div>
+  </div>
+
+  <!-- دکمه چپ -->
+  <button class="absolute top-1/2 -left-3 transform -translate-y-1/2 bg-white border rounded-full w-8 h-8 flex items-center justify-center shadow">
+    <span class="text-xs font-bold">↦</span>
+  </button>
+
+  <!-- دکمه راست -->
+  <button class="absolute top-1/2 -right-3 transform -translate-y-1/2 bg-white border rounded-full w-8 h-8 flex items-center justify-center shadow">
+    <span class="text-xs font-bold">↤</span>
+  </button>
+</main>
+</body>
+</html>
