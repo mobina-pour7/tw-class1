@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
@@ -39,19 +40,19 @@
 <div class="flex justify-end mb-8 mt-4"> 
   <label for="menu-toggle" 
          class="cursor-pointer relative h-12 w-24 rounded-full bg-indigo-300 shadow-md inline-block">
-      <span class="absolute inset-1 rounded-full border border-gray-600"></span>
+      <span class="absolute inset-1 rounded-full border border-pink-300"></span>
       <div class="absolute left-2 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-inner">
           <div class="h-6 w-6 rounded-full bg-indigo-400 shadow-sm"></div>
       </div>
       <div class="absolute right-2 top-1/2 h-1 w-6 -translate-y-1/2 rounded-full bg-gray-500 shadow-inner"></div>
-      <span class="absolute left-1 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-gray-800 shadow-inner transition-all duration-300 peer-checked:left-[calc(100%-2.75rem)]">
+      <span class="absolute left-1 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-pink-300 shadow-inner transition-all duration-300 peer-checked:left-[calc(100%-2.75rem)]">
           <span class="relative h-full w-full rounded-full border border-gray-500"></span>
       </span>
   </label>
 </div>
                     <!-- پس زمینه منو -->
                     <label for="menu-toggle" 
-                           class="fixed inset-0 bg-black bg-opacity-0 invisible transition-all duration-300 peer-checked:bg-opacity-50 peer-checked:visible z-40"></label>
+                           class="fixed inset-0  bg-opacity-0 invisible transition-all duration-300 peer-checked:bg-opacity-50 peer-checked:visible z-40"></label>
                     
                     <!-- منوی کشویی از سمت راست -->
                     <div class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform translate-x-full transition-transform duration-300 peer-checked:translate-x-0">
@@ -71,8 +72,8 @@
                     </div>
 
     </header>
-    <div class="mx-2 md:mx-4">
-    <button class="ml-182 text-black text-3xl font-bold mt-4 bg-sky-100 justify-center border-2  border-indigo-400 ">Tailwind</button></div>
+    <div>
+    <button class="ml-176 text-black text-3xl font-bold mt-4 bg-sky-100 justify-center border-2  border-indigo-400 ">Tailwind</button></div>
     <main class=" bg-linear-90 to-green-50 from-blue-100 border border-indigo-400  p-4 max-w-screen-lg mx-auto mt-8">
       <!-- بخش بالایی -->
       <div class="flex flex-col md:flex-row gap-2 mb-4">
@@ -153,6 +154,12 @@
     <span class="text-xs font-bold">↤</span>
   </button>
 </main>
+<div class="grid grid-cols-4 md:grid-cols-10 fa-3x">
+<i class="fa fa-car text-green-300 fa-3x animate-spin"></i>
+<i class="fab fa-apple text-pink-300 animate-pulse"></i>
+<i class="fab fa-algolia text-black fa-pulse "></i>
+<i class="fab fa-apple text-purple-400 fa-pulse "></i>
+<i class="fa fa-car text-green-300 fa-3x"></i></div>
   <footer class="bg-purple-100 text-center py-4 mt-8 text-sm md:text-base">
     <h1 class="font-bold">🍃FOOTER🍃 </h1>
   </footer>
