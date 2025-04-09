@@ -18,25 +18,61 @@
                 <img src="/assests/images/plus-tailwind.jpg" alt="لوگو" 
                      class="rounded-full w-10 h-10 md:w-14 md:h-14 border-2 border-gray-300 object-cover">
             </div>
-            <div class="relative">
-                <!-- دکمه toggle -->
-                <button id="toggleButton" 
+            <!-- <div class="relative">
+                دکمه toggle -->
+                <!-- <button id="toggleButton" 
                         class="peer w-12 md:w-14 h-6 md:h-8 flex items-center bg-gray-300 rounded-full p-1 transition-all duration-300 focus:outline-none">
                     <div class="bg-white w-4 md:w-6 h-4 md:h-6 rounded-full shadow-md transform transition-transform duration-300 peer-checked:translate-x-6"></div>
-                </button>
+                </button> -->
                 
                 <!-- پنل کشویی -->
-                <div class="absolute right-0 top-full mt-2 w-[20cm] bg-white rounded-lg shadow-xl p-4 
+                <!-- <div class="absolute right-0 top-full mt-2 w-[20cm] bg-white rounded-lg shadow-xl p-4 
                            scale-95 opacity-0 invisible transition-all duration-300 
                            peer-checked:scale-100 peer-checked:opacity-100 peer-checked:visible">
                     <p class="text-gray-700">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Impedit dolores voluptate suscipit. <br> Accusamus suscipit tenetur molestias <br> labore velit alias, <br> exercitationem ut, ad nulla, quis illo <br> mollitia modi? Illo, dolores nemo.</p>
                     <button class="mt-2 px-4 py-2 bg-blue-500 text-black rounded hover:bg-blue-600">دکمه نمونه</button>
                 </div>
             </div>
-        </div>
+        </div> -->
+        <input type="checkbox" id="menu-toggle" class="hidden peer">
+          
+<div class="flex justify-end mb-8 mt-4"> 
+  <label for="menu-toggle" 
+         class="cursor-pointer relative h-12 w-24 rounded-full bg-indigo-300 shadow-md inline-block">
+      <span class="absolute inset-1 rounded-full border border-gray-600"></span>
+      <div class="absolute left-2 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-inner">
+          <div class="h-6 w-6 rounded-full bg-indigo-400 shadow-sm"></div>
+      </div>
+      <div class="absolute right-2 top-1/2 h-1 w-6 -translate-y-1/2 rounded-full bg-gray-500 shadow-inner"></div>
+      <span class="absolute left-1 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-gray-800 shadow-inner transition-all duration-300 peer-checked:left-[calc(100%-2.75rem)]">
+          <span class="relative h-full w-full rounded-full border border-gray-500"></span>
+      </span>
+  </label>
+</div>
+                    <!-- پس زمینه منو -->
+                    <label for="menu-toggle" 
+                           class="fixed inset-0 bg-black bg-opacity-0 invisible transition-all duration-300 peer-checked:bg-opacity-50 peer-checked:visible z-40"></label>
+                    
+                    <!-- منوی کشویی از سمت راست -->
+                    <div class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform translate-x-full transition-transform duration-300 peer-checked:translate-x-0">
+                        <div class="p-4 border-b border-gray-200 flex justify-between items-center">
+                            <h3 class="text-lg font-bold">منوی اصلی</h3>
+                            <label for="menu-toggle" class="cursor-pointer text-gray-500 hover:text-gray-700 text-2xl">
+                                &times;
+                            </label>
+                        </div>
+                        <div class="p-4">
+                            <ul class="space-y-3">
+                                <li><a href="#" class="block py-2 hover:bg-gray-100 px-2 rounded">صفحه اصلی</a></li>
+                                <li><a href="#" class="block py-2 hover:bg-gray-100 px-2 rounded">محصولات</a></li>
+                                <li><a href="#" class="block py-2 hover:bg-gray-100 px-2 rounded">تماس با ما</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
     </header>
-    <div>
-    <button class="ml-182 text-black text-3xl font-bold mt-4 bg-sky-100 justify-center border-2  border-indigo-400">Tailwind</button></div>
+    <div class="mx-2 md:mx-4">
+    <button class="ml-182 text-black text-3xl font-bold mt-4 bg-sky-100 justify-center border-2  border-indigo-400 ">Tailwind</button></div>
     <main class=" bg-linear-90 to-green-50 from-blue-100 border border-indigo-400  p-4 max-w-screen-lg mx-auto mt-8">
       <!-- بخش بالایی -->
       <div class="flex flex-col md:flex-row gap-2 mb-4">
