@@ -22,7 +22,7 @@
           <img src="/assests/images/plus-tailwind.jpg" alt="لوگو"
             class="rounded-full w-10 h-10 md:w-14 md:h-14 border-2 border-gray-300 object-cover items-center">
         </div>
-        <input type="checkbox" id="menu-toggle" class="hidden peer">
+        <!-- <input type="checkbox" id="menu-toggle" class="hidden peer">
 
         <div class="flex justify-end mb-8 mt-4">
           <label for="menu-toggle"
@@ -38,13 +38,13 @@
               <span class="relative h-full w-full rounded-full border border-purple-300"></span>
             </span>
           </label>
-        </div>
+        </div> -->
         <!-- پس زمینه منو -->
-        <label for="menu-toggle"
-          class="fixed inset-0  bg-opacity-0 invisible transition-all duration-300 peer-checked:bg-opacity-50 peer-checked:visible z-40"></label>
+        <!-- <label for="menu-toggle"
+          class="fixed inset-0  bg-opacity-0 invisible transition-all duration-300 peer-checked:bg-opacity-50 peer-checked:visible z-40"></label> -->
 
         <!-- منوی کشویی از سمت راست -->
-        <div
+        <!-- <div
           class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform translate-x-full transition-transform duration-300 peer-checked:translate-x-0">
           <div class="p-4 border-b border-gray-200 flex justify-between items-center">
             <h3 class="text-lg font-bold">منوی اصلی</h3>
@@ -59,13 +59,36 @@
               <li><a href="#" class="block py-2 hover:bg-gray-100 px-2 rounded">تماس با ما</a></li>
             </ul>
           </div>
+        </div> -->
+        <div class="flex items-center space-x-4">
+          <label for="click" class="cursor-pointer">
+            <div class="relative inline-block w-16 h-8">
+              <div  tabindex="1" class="inset-0 flex items-center justify-between p-1 bg-amber-800 rounded-full">
+                <input type="radio" name="tog" id="click" class="hidden peer absolute">
+                <input type="radio" name="tog" class="opacity-0 cursor-pointer scale-200 peer absolute">
+                <span class="w-6 h-6 bg-amber-200 rounded-full transition-all peer-checked:translate-x-8"></span>
+              </div>
+            </div>
+          </label>
         </div>
-
-
-    </header>
-
-
-
+  <label for="click"
+          class="fixed inset-0  bg-opacity-0 invisible transition-all duration-300 peer-checked:bg-opacity-50 peer-checked:visible z-40"></label>
+  <div class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform translate-x-full transition-transform duration-300 ">
+  <div class="p-4 border-b border-gray-200 flex justify-between items-center">
+    <h3 class="text-lg font-bold">منوی اصلی</h3>
+  <label for="click" class="cursor-pointer text-gray-500 hover:text-gray-700 text-2xl">
+    &times;
+  </label>
+</div>
+<div class="p-4">
+  <ul class="space-y-3">
+    <li><a href="#" class="block py-2 hover:bg-gray-100 px-2 rounded">صفحه اصلی</a></li>
+    <li><a href="#" class="block py-2 hover:bg-gray-100 px-2 rounded">محصولات</a></li>
+    <li><a href="#" class="block py-2 hover:bg-gray-100 px-2 rounded">تماس با ما</a></li>
+  </ul>
+</div>
+</div>
+</header>
     <div>
       <button
         class="ml-176 text-black text-3xl font-bold mt-4 bg-sky-100 justify-center border-2  border-indigo-400 ">Tailwind</button>
