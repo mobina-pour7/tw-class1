@@ -13,7 +13,7 @@
 
   <body class=" overflow-x-hidden bg-linear-60  to-pink-50 from-indigo-50 from-20%">
     <header class="bg-purple-100 shadow-md py-4 px-6">
-      <div class="container mx-auto flex items-center justify-between">
+     <div class="container mx-auto flex items-center justify-between">
         <!-- عنوان در سمت چپ -->
         <h1 class="text-lg md:text-xl font-bold text-gray-800">Tailwind✨</h1>
 
@@ -22,78 +22,34 @@
           <img src="/assests/images/plus-tailwind.jpg" alt="لوگو"
             class="rounded-full w-10 h-10 md:w-14 md:h-14 border-2 border-gray-300 object-cover items-center">
         </div>
-        <!-- <input type="checkbox" id="menu-toggle" class="hidden peer">
-
-        <div class="flex justify-end mb-8 mt-4">
-          <label for="menu-toggle"
-            class="cursor-pointer relative h-12 w-24 rounded-full  bg-indigo-100 shadow-md inline-block">
-            <span class="absolute inset-1 rounded-full border border-gray-600"></span>
-            <div
-              class="absolute left-2 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-inner">
-              <div class="h-6 w-6 rounded-full bg-pink-100 shadow-sm"></div>
-            </div>
-            <div class="absolute right-2 top-1/2 h-1 w-6 -translate-y-1/2 rounded-full bg-gray-500 shadow-inner"></div>
-            <span
-              class="absolute left-1 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full  bg-pink-200 shadow-inner transition-all duration-300 peer-checked:left-[calc(100%-2.75rem)]">
-              <span class="relative h-full w-full rounded-full border border-purple-300"></span>
-            </span>
-          </label>
-        </div> -->
-        <!-- پس زمینه منو -->
-        <!-- <label for="menu-toggle"
-          class="fixed inset-0  bg-opacity-0 invisible transition-all duration-300 peer-checked:bg-opacity-50 peer-checked:visible z-40"></label> -->
-
-        <!-- منوی کشویی از سمت راست -->
-        <!-- <div
-          class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform translate-x-full transition-transform duration-300 peer-checked:translate-x-0">
-          <div class="p-4 border-b border-gray-200 flex justify-between items-center">
-            <h3 class="text-lg font-bold">منوی اصلی</h3>
-            <label for="menu-toggle" class="cursor-pointer text-gray-500 hover:text-gray-700 text-2xl">
-              &times;
-            </label>
-          </div>
-          <div class="p-4">
-            <ul class="space-y-3">
-              <li><a href="#" class="block py-2 hover:bg-gray-100 px-2 rounded">صفحه اصلی</a></li>
-              <li><a href="#" class="block py-2 hover:bg-gray-100 px-2 rounded">محصولات</a></li>
-              <li><a href="#" class="block py-2 hover:bg-gray-100 px-2 rounded">تماس با ما</a></li>
-            </ul>
-          </div>
-        </div> -->
         <div class="flex items-center space-x-4">
-          <label for="click" class="cursor-pointer">
-            <div class="relative inline-block w-16 h-8">
-              <div  tabindex="1" class="inset-0 flex items-center justify-between p-1 bg-amber-800 rounded-full">
-                <input type="radio" name="tog" id="click" class="hidden peer absolute">
-                <input type="radio" name="tog" class="opacity-0 cursor-pointer scale-200 peer absolute">
-                <span class="w-6 h-6 bg-amber-200 rounded-full transition-all peer-checked:translate-x-8"></span>
-              </div>
-            </div>
-          </label>
-        </div>
-  <label for="click"
-          class="fixed inset-0  bg-opacity-0 invisible transition-all duration-300 peer-checked:bg-opacity-50 peer-checked:visible z-40"></label>
-  <div class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform translate-x-full transition-transform duration-300 ">
-  <div class="p-4 border-b border-gray-200 flex justify-between items-center">
-    <h3 class="text-lg font-bold">منوی اصلی</h3>
-  <label for="click" class="cursor-pointer text-gray-500 hover:text-gray-700 text-2xl">
-    &times;
-  </label>
-</div>
-<div class="p-4">
-  <ul class="space-y-3">
-    <li><a href="#" class="block py-2 hover:bg-gray-100 px-2 rounded">صفحه اصلی</a></li>
-    <li><a href="#" class="block py-2 hover:bg-gray-100 px-2 rounded">محصولات</a></li>
-    <li><a href="#" class="block py-2 hover:bg-gray-100 px-2 rounded">تماس با ما</a></li>
-  </ul>
-</div>
-</div>
-</header>
-    <div>
-      <button
-        class="ml-176 text-black text-3xl font-bold mt-4 bg-sky-100 justify-center border-2  border-indigo-400 ">Tailwind</button>
+          <label for="toggle1" class="cursor-pointer">
+           <div class="relative inline-block w-16 h-8">
+             <div tabindex="1" class=" inset-0 flex items-center justify-between p-1 bg-white rounded-full ">
+               <input type="radio" name="tog" class="opacity-0 cursor-pointer scale-200 peer absolute " checked>
+               <span class="w-6 h-6 bg-sky-400 rounded-full  transition-all peer-checked:translate-x-8"></span>
+             </div>
+           </div>
+         </label>
+       </div>
+     </header>
+     <main class="w-full flex  h-full">
+       <section class="flex justify-center items-center flex-col flex-1/2">
+      <p class="font-bold text-4xl border-2 text-black bg-sky-100 border-indigo-400 mt-[-700px] ml-8  ">Tailwind</p>
+       </section>
+       <label>
+         <input type="radio" name="tog" id="toggle1" class="hidden peer">
+         <nav class="w-0 h-[100vh] bg-pink-100 transition-all flex justify-center peer-checked:w-[300px] overflow-hidden">
+           <ul>
+             <a href=""><li class="mt-5">well played</li></a>
+             <a href=""><li class="mt-5">good game</li></a>
+             <a href=""><li class="mt-5">fast finish</li></a>
+           </ul>
+         </nav>
+       </label>
+     </main>
     </div>
-    <main class=" bg-linear-90 to-green-50 from-blue-100 border border-indigo-400  p-4 max-w-screen-lg mx-auto mt-8">
+    <main class="mt-[-700px] bg-linear-90 to-green-50 from-blue-100 border border-indigo-400  p-4 max-w-screen-lg mx-auto  ">
       <!-- بخش بالایی -->
       <div class="flex flex-col md:flex-row gap-2 mb-4">
         <!-- تصویر سمت چپ -->
